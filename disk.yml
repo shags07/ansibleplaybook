@@ -1,0 +1,15 @@
+--- 
+- 
+  hosts: win
+  tasks: 
+- 
+  name: "Get disk facts"
+  win_disk_facts: 
+- 
+  debug: 
+    var: "ansible_facts.disks[0].size"
+- 
+  debug: 
+    msg: "{{ disksize_gib }} vs {{ disksize_gib_human }}"
+  name: "Output first disk size"
+

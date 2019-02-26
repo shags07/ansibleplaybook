@@ -1,0 +1,9 @@
+---
+- hosts: win
+  tasks:
+   - name: Installing updatse
+     win_updates:
+     category_names:
+      - SecurityUpdates
+      - CriticalUpdates
+      - UpdateRollup
