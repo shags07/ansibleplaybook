@@ -1,0 +1,7 @@
+- hosts: client
+  tasks:
+  - name: Ansible create file with content
+    file:
+      path: "/greeting.txt"
+      state: touch
+      content: Welcome to capgemini

@@ -1,0 +1,9 @@
+- hosts: "client"
+  sudo: yes
+  tasks:
+   - user:
+        name: Sagar
+        password: password
+        update_password: always
+        comment: sagar yadav
+        uid: 1005
